@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<script>
+let kolich_dn = (d,m) => {	
+	var ostm = (12-d)*30
+	var ostd = 30-m
+	var rez = ostm+ostd
+	alert("До Нового года " + rez + "дн. :)")
+}
+var a = prompt('Введите номер текущего месяца: ')
+var b = prompt("Введите сегодняшнее число: ")
+kolich_dn(a,b)
+</script>
+</html>

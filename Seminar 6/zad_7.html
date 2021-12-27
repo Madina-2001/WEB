@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<script>
+let sum = (a) => {	
+	var s=0
+	for (let i=0; i<10; i++) {
+		s=s+a[i]
+		}
+	alert("Сумма: " + s)
+}
+
+let chet = (a) => {	
+	var ch = []
+	for (let i=0; i<10; i++) {
+		if (a[i]%2==0){
+			ch.push(a[i])
+		}
+	}
+	alert("Четные: " + ch)
+}
+
+let kchet = (a) => {	
+	var kch = []
+	for (let i=0; i<10; i++) {
+		if (a[i]%2==0){
+			kch.push(a[i] * a[i])
+		}
+	}
+	alert("Возведённые в квадрат: " + kch)
+}
+
+var arr = []
+for (let i=0; i<10; i++) {	
+	arr[i] = Math.round(Math.random()*40)-10
+}
+alert(arr)
+sum(arr)
+chet(arr)
+kchet(arr)
+</script>
+</html>
